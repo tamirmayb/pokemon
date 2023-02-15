@@ -39,6 +39,13 @@ export class PokemonService {
   }
 
   public async fight(numberOfPokemons: number) {
+    if (numberOfPokemons % 2 != 0) {
+      throw new HttpError(
+        `Invalid fight configuration, please select an even number of fighters`,
+        404
+      );
+    }
+
     const count = await Pokemon.countDocuments();
     const pokemonsIds: number[] = Array.from({ length: numberOfPokemons }, () =>
       Math.floor(Math.random() * count + 1)
