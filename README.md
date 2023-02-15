@@ -44,3 +44,6 @@ $ npm start run
 * Add logger ?
 * Improve error messages
 * Tests are missing for now due to an issue with testing repositories installations.
+
+Please let me know if you have any questions.
+Thank you!
