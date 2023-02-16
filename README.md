@@ -37,8 +37,9 @@ $ npm start run
   * You first need to choose an **even number** which the end point takes as a parameter.
   * It then selects pokemons in the amount of the parameter **randomly** and splits them into 2 lists.
   * The process continues by iterating over the lists with every member of each list fights once as an attacker and once as a defender.
-  * The pokemon who got the most damage loses the match (this could also be a bit of a different logic than what you would expect but seemed more interesting that way :)
-  * The winners are again split into 2 lists and fight each other until only one winner remains - The winner of the fight
+  * The pokemon who got the most damage loses the match (this could also be a bit of a different logic than what you would expect but seemed more interesting that way :) )
+  * The winners are again split into 2 lists and fight each other until only one winner remains - The winner of the fight.
+  * Each match outcome is returned from the api as well as the winner as a list of strings which could be used later by ui...
 
 #### TODOs:
 * Add logger ?
